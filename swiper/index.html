@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+ 
+  <!-- Swiper -->
+
+  <div #swiperRef="" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <main>
+    <nav class="grid-container">
+      <div class="logo">HealthBuddy</div>
+      <div class="grid-items">
+        <div class="pages">Home</div>
+            <div class="pages">Features</div>
+            <div class="pages">Testimonials</div>
+            <div class="pages">Download</div>
+      </div>
+    </nav>
+    <!--body1-->
+    <div class="body1">
+        <div class="left">
+          <p class="desc">Our App is designed to<br>
+            help you <b>MONITOR</b> and <br>improve your 
+            <b>MENTAL</b> well-being <br>by providing a
+              user-friendly <br>interface to <b>TRACK</b>
+              your emotions, moods, and activities.</p>
+          <button type="submit" class="learn">Learn more &nbsp;<i class='fas fa-arrow-right'></i></button>
+        </div>
+        <div class="right">
+          <img src="p.png" class="p">
+          <img src="p1.png" class="p1"> 
+        </div>
+    </div>
+    <!--body2-->
+       <div class="body2">
+          <div class="left1">
+              <img src="p2.png" class="p2">
+          </div>
+          <div class="right1">
+              <p class="desc1">At Mental Health Tracker, 
+                we understand that maintaining good mental health is
+                essential for overall well-being.</p>
+              <p class="desc1">By keeping a record of your mental health 
+                  journey, you can gain valuable insights into
+                  your emotional patterns and make positive
+                  changes in your life.</p>
+          </div>
+       </div>
+       <!--Features body3-->
+      <div class="body3">
+        <span class="title">Features</span>
+        <!--left-->
+       <div class="features">
+         <div class="leftfeatures">
+            <div class="first">
+                  <div class="circle"></div>
+                  <div class="subtitle">Daily Mood Tracker</div>   
+            </div>
+            <div class="card-first show-on-scroll">
+                  <img src="first.png" id="pic"><p class="card-desc">Keep track of your
+                  daily moods using our intuitive mood tracker.
+                  Simply select the emotion that best
+                  represents your feelings for the day,
+                  and you'll be able to visualize your
+                  mood trends over time.</p>
+            </div>
+           <!---->
+            <div class="first">
+                  <div class="circle"></div>
+                  <div class="subtitle">Emotion Journal</div>   
+            </div>
+            <div class="card-first show-on-scroll">
+                  <img src="second.png" id="pic"><p class="card-desc"> Maintain an emotion journal where you can write about your feelings, thoughts, and experiences. Reflect on your day, celebrate the positive moments, and process challenging emotions in a safe and private space.</p>
+            </div>
+           <!---->
+            <div class="first">
+                  <div class="circle"></div>
+                  <div class="subtitle">Activity Log</div>   
+            </div>
+            <div class="card-first show-on-scroll">
+                  <img src="third.png" id="pic"><p class="card-desc">Record your daily activities and routines to identify potential triggers or patterns that may impact your mental well-being. Understanding how your activities affect your mood can empower you to make informed lifestyle choices.</p>
+            </div>
+         </div>
+          <!--right-->
+         <div class="rightfeatures">
+            <div class="first">
+                  <div class="circle"></div>
+                  <div class="subtitle">Reminders and Goal Setting</div>   
+            </div>
+            <div class="card-first show-on-scroll">
+                  <img src="fourth.png" id="pic"><p class="card-desc">Set reminders to check in with yourself regularly and stay consistent in tracking your emotions. Additionally, establish mental health goals and monitor your progress towards achieving them.</p>
+            </div>
+           <!---->
+            <div class="first">
+                  <div class="circle"></div>
+                  <div class="subtitle">Community Support</div>   
+            </div>
+            <div class="card-first show-on-scroll">
+                  <img src="fifth.png" id="pic"><p class="card-desc">Connect with a community of like-minded individuals who are also on a journey to improve their mental health. Share experiences, offer support, and learn from others in a supportive and non-judgmental environment.</p>
+            </div>
+           <!---->
+            <div class="first">
+                  <div class="circle"></div>
+                  <div class="subtitle">Insightful Resources</div>   
+            </div>
+            <div class="card-first show-on-scroll">
+                  <img src="sixth.png" id="pic"><p class="card-desc">Access a library of articles, tips, and resources curated by mental health experts. Learn coping strategies, mindfulness techniques, and other valuable insights to enhance your mental well-being.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!--testimonials body4-->
+        <div class="body4"> 
+            <div class="Testimonials">Testimonials</div>
+              <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <img src="person1.jpg" class="profile"></img>
+                      <div class="cardcontent">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="quote">The personalized recommendations and coping strategies provided by the mental health tracker have been incredibly helpful in managing my anxiety and stress levels.</p>
+                        <i class="fa-solid fa-quote-right"></i>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="person2.jpg" class="profile"></img>
+                      <div class="cardcontent">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="quote">I love the goal-setting feature. It helps me set achievable targets for myself and celebrate my progress in improving my mental health.</p>
+                        <i class="fa-solid fa-quote-right"></i>
+                      </div>
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="person3.jpg" class="profile"></img>
+                      <div class="cardcontent">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="quote">The mental health tracker has been a game-changer for me. It helps me keep track of my moods, activities, and triggers, giving me valuable insights into my mental well-being.</p>
+                        <i class="fa-solid fa-quote-right"></i>
+                      </div>
+                </div>
+                <div class="swiper-slide">
+                      <img src="person3.jpg" class="profile"></img>
+                      <div class="cardcontent">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="quote">The mental health tracker has been a game-changer for me. It helps me keep track of my moods, activities, and triggers, giving me valuable insights into my mental well-being.</p>
+                        <i class="fa-solid fa-quote-right"></i>
+                      </div>
+                </div>
+                <div class="swiper-slide">
+                      <img src="person3.jpg" class="profile"></img>
+                      <div class="cardcontent">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <p class="quote">The mental health tracker has been a game-changer for me. It helps me keep track of my moods, activities, and triggers, giving me valuable insights into my mental well-being.</p>
+                        <i class="fa-solid fa-quote-right"></i>
+                      </div>
+                </div>
+             </div>
+          </div>
+    </main>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script type="module" src="/main.js"></script>
+  
+
+  <!-- Initialize Swiper -->
+
+</body>
+
+</html>
