@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=REM:wght@300&display=swap');
+/*body{
+    color: #084C61;
+    color: #DB504A;red
+    color: #E3B505;yellow
+    color: #4F6D7A; sage sky blue
+    color: #56A3A6;sky blue
+}*/
+body{
+    margin: 0;
+}
+/*navbar*/
+nav{
+    display:flex;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #084C61;
+    align-items: center;
+    padding: 0px 130px;
+}
+.logo-img{
+    width: 50px;
+    height:50px;
+    margin-top: -10px;
+}
+.logo-name{
+    font-family: 'Borel', cursive;
+    font-size: 30px;
+    font-weight: bold;
+    color:aliceblue
+}
+.logo{
+    display: flex;
+    margin-top:20px;
+    cursor: pointer;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    font-family: 'REM', sans-serif;
+    gap:50px;
+    font-size:20px;
+    align-items: center;
+    color:aliceblue;
+    cursor: pointer;
+}
+.logo-name a{
+    text-decoration: none;
+    color:aliceblue;
+}
+.logo-name a:hover{
+    color:#DB504A
+}
+a{
+    text-decoration: none;
+    color:aliceblue;
+}
+a:hover{
+    color: #E3B505;
+}
+.contact-nav{
+    background-color: #DB504A;
+    border: none;
+    border-radius: 50px;
+    width: 120px;
+    height: 40px;
+    font-family: 'REM', sans-serif;
+    font-size:20px;
+    color:aliceblue;
+    cursor: pointer;
+}
+/*container*/
+#container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 130px;
+    align-items: center;
+    height: 600px;
+    background-color: #084C61;
+    overflow: hidden;
+}
+.rightcontent{
+    font-size: 50px;
+    font-family: 'REM', sans-serif;
+    color: aliceblue;
+    position: relative;
+    z-index: 1;
+}
+.multiText{
+    font-size: 6vw;
+    margin-top:-30px;
+    margin-bottom: -40px;
+    color: #E3B505;
+    font-weight: bold;
+}
+.class1{
+height: 400px;
+width: 600px;
+clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+.pic1{
+    object-fit:cover;
+    width:600px;
+    height: 400px;
+}
+
+.rightcontent p{
+    font-size: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.bluecircle{
+    width:70px;
+    height:70px;
+    background-color: #56A3A6;
+    border-radius: 50px;
+    position: absolute;
+    z-index: -1;
+    left:13vw;
+    top: -2vw;
+    filter: blur(5px);
+    animation: object1 6s linear infinite;
+}
+
+@keyframes object1 {
+    50%{
+        top:-31%;
+        bottom:1%;
+    }
+    
+}
+.bigbluecircle{
+    width:300px;
+    height:300px;
+    background-color: #56A3A6;
+    border-radius: 50%;
+    position: absolute;
+    left:-10vw;
+    z-index: -1;
+    filter: blur(5px);
+    animation: object2 6s linear infinite;
+}
+@keyframes object2 {
+    50%{
+        left:-13%;
+    }
+}
+/*property*/
+#property{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:aliceblue;
+    height: 800px;
+    padding: 60px 130px;
+}
+.title{
+    font-size: 30px;
+    font-family: 'REM', sans-serif;
+    color:#7f7f7f
+}
+.subtitle{
+    font-size: 50px;
+    font-family: 'REM', sans-serif;
+    font-weight: bold;
+    margin-top: -10px;
+    color: #1d1d1d;
+}
+.swiper{
+    width: 100%;
+}
+.slide-card{
+    background-color: #b6cad2;
+    width:500px;
+    height: 500px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.house-img{
+    width:25vw;
+    height:15vw;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px;
+}
+.slide-body{
+    font-size: 30px;
+    font-family: 'REM', sans-serif;
+    padding: 0px 20px;
+    color: #1d1d1d;
+}
+.slide-body .housename{
+    margin-top:0px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.slide-body .houseadd{
+    margin-top:-35px;
+    font-size: 15px;
+}
+.swiper-button-prev{
+    cursor: pointer;
+    color:#DB504A;
+    font-weight: bold;
+}
+.swiper-button-next{
+    cursor: pointer;
+    color:#DB504A;
+    font-weight: bold;
+}
+
+.swiper-pagination-bullet{
+    background-color:#DB504A;
+}
+/*services*/
+#services{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 800px;
+    overflow: hidden;
+    background-color: #4F6D7A;
+    background-image: linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.05) 50%),
+    linear-gradient(135deg, transparent 50%, rgba(255, 255, 255, 0.05) 50%);
+    background-size: 300px 300px;
+}
+.services-img{
+    width: 900px;
+    height: 800px;
+    margin-left: -300px;
+    margin-top: 200px
+}
+
+.services-content ul{
+    display: flex;
+    flex-direction: column;
+    font-size:25px;
+    font-family: 'REM', sans-serif;
+    font-weight: bold;
+    letter-spacing: 5px;
+    align-items: start;
+}
+
+.services-content ul li{
+    margin-bottom: -30px
+}
+
+.services-content ul li p{
+    width:600px
+}
+
+.offer-content{
+    font-size:17px;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+.offer{
+    font-family: 'REM', sans-serif;
+    font-size:50px;
+    color: #E3B505;
+    font-weight: bold;
+    letter-spacing: 2.3px;
+}
+/*testimonials*/
+#testimonials{
+    height: fit-content;
+    width: 100%;
+    text-align: center;
+    padding:50px 0px 120px 0px;
+    font-family: 'REM', sans-serif;
+    background-color: aliceblue;
+    color: #1d1d1d;
+}
+#testimonials h4{
+  font-size: 30px;
+  color:#7f7f7f
+}
+#testimonials h1{
+    font-size:60px;
+    margin-top: -40px;
+    margin-bottom: -20px;
+}
+.test{
+    font-size:20px;
+    color:#7f7f7f
+}
+.myswiper{
+    width:70%;
+}
+.slide-card1{
+    height: 400px;
+    width: 100px;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+   justify-content: center;
+}
+.slide-wrapper{
+    padding: 0px 130px;
+}
+.person{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.slide-img1{
+    position: absolute;
+    top:22%;
+    left:5%;
+    z-index: 1;
+}
+.slide-content1{
+    box-shadow: 5px 5px 15px #a7d9da;
+    font-size:18px;
+    font-family: 'REM', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    margin-top:120px;
+    padding: 50px 0px 0px 0px;
+    border-radius: 10px;
+    border: 1px solid #7f7f7f;
+    width: fit-content;
+}
+.testimonials-content{
+    grid-column: 1/ span 2;
+    width:500px;
+    padding:0px 30px
+}
+.testimonials-name, .stars{
+    border-top: 1px solid;
+    padding:20px 0px;
+}
+/*contact*/
+#contact{
+    display:flex;
+    justify-content: space-between;
+    padding: 0px 130px;
+    align-items: center;
+    height: 800px;
+    gap:20px;
+    background-color: #4F6D7A;
+    background-image: linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.03) 50%),
+    linear-gradient(135deg, transparent 50%, rgba(255, 255, 255, 0.03) 50%);
+    background-size: 300px 300px;
+}
+
+.fa-address-card, .fa-envelope , .fa-phone-volume{
+    font-size: 30px;
+    color:#1d1d1d
+}
+.ways{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+    gap:50px;
+    font-family: 'REM', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #1d1d1d;
+    cursor: pointer;
+}
+.touch{
+    margin-top: -40px;
+    font-size:70px;
+    font-family: 'REM', sans-serif;
+    font-weight: bold;
+    color: #1d1d1d;
+}
+.form-content{
+    height: 600px;
+    width: 600px;
+    background-color: #1d1d1d;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:aliceblue
+}
+
+.address{
+    grid-column: 1/span 2;
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    align-items: center;
+    padding: 50px;
+    font-size:20px;
+    font-family: 'REM', sans-serif;
+}
+.email, .message{
+    grid-column: 1/span 2;
+}
+
+form input{
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'REM', sans-serif;
+    background-color: aliceblue;
+}
+textarea{
+    width:460px;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+.email{
+    margin-top: -40px;
+}
+.email input{
+    width:460px
+}
+.submit{
+    font-size:20px;
+    font-family: 'REM', sans-serif;
+    font-weight: bold;
+    width: fit-content;
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+.form-title{
+    font-size:30px;
+    font-family: 'REM', sans-serif;
+    font-weight: bold;
+    background-color: #084C61;
+    border-radius: 10px;
+    width:300px;
+    padding: 5px 30px;
+    text-align: center;
+    position: absolute;
+    margin-left:120px;
+    margin-top:-40px;
+    color:aliceblue
+}
+/*footer*/
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 130px;
+    color: #1d1d1d;
+  }
+footer{
+    background-color: aliceblue;
+    color: #1d1d1d; 
+}
+  .email2{
+   border:none;
+   border-bottom: 0.15vw solid #242527;
+   background: transparent;
+   width:20vw;
+   font-size: 1.3vw;
+  }
+  .fa-envelope{
+    font-size: 2vw;
+  }
+  .sub{
+    border:none;
+    background-color: #242527;
+    color:#fff;
+    padding: 0.7vw 2vw;
+    border-radius: 5px;
+    font-size:1.5vw;
+    margin-top: 2vw;
+    cursor: pointer;
+  }
+  .subscribe{
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: 'REM', sans-serif;
+    margin-top: 3vw;
+    letter-spacing: 2px;
+  }
+  .contact1{
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: 'REM', sans-serif;
+    letter-spacing: 2px;
+  }
+  .fb, .tw, .ig{
+    width: 4vw;
+    height: 4vw;
+    background-color: #242527;
+    border-radius: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+  }
+  .fa-brands{
+    font-size: 1.8vw;
+  }
+  .social-media{
+    display: flex;
+    gap: 1.5vw;
+    margin-top: 2.5vw;
+  }
+  .line{
+    height: 0.1vw;
+    background-color: #1d1d1d;
+    border-radius: 20px;
+  }
+  .footer{
+   text-align: center;
+   font-size: 1.5vw;
+  }
+  .logo-name1{
+    color: #1d1d1d;
+    font-family: 'Borel', cursive;
+    font-size: 30px;
+    font-weight: bold;
+  }
