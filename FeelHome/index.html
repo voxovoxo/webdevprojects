@@ -16,7 +16,10 @@
             <img src="logo.png" class="logo-img">
             <a href="#container" class="logo-name">FeelHome</a>
         </div>
-        <ul class="nav-items">
+        <button class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars" style="color:2d2f35;"></i>
+        </button>
+        <ul class="nav-items" id="nav-ul">
             <li><a href="#property">Property</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
@@ -239,7 +242,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
         var typingeffect = new Typed('.multiText',{
-          strings : ["HOUSE?", "APARTMENT?", "STUDIO?"],
+          strings : ["HOUSE?", "FLAT?", "STUDIO?"],
           loop: true,
           typeSpeed :80,
           backSpeed :60,

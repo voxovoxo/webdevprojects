@@ -13,7 +13,6 @@ body{
 nav{
     display:flex;
     justify-content: space-between;
-    height: 80px;
     background-color: #084C61;
     align-items: center;
     padding: 0px 130px;
@@ -34,7 +33,14 @@ nav{
     margin-top:20px;
     cursor: pointer;
 }
-
+.hamburger{
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    font-size:20px;
+    cursor: pointer;
+    display: none;
+}
 ul{
     display: flex;
     list-style: none;
@@ -88,7 +94,7 @@ a:hover{
     z-index: 1;
 }
 .multiText{
-    font-size: 6vw;
+    font-size: 4vw;
     margin-top:-30px;
     margin-bottom: -40px;
     color: #E3B505;
@@ -525,3 +531,524 @@ footer{
     font-size: 30px;
     font-weight: bold;
   }
+
+/*responsiveness*/
+@media screen and (max-width:1500px) {
+    
+.fa-address-card, .fa-envelope , .fa-phone-volume{
+    font-size: 20px;
+    color:#1d1d1d
+}
+.ways{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap:3vw;
+    font-family: 'REM', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #1d1d1d;
+    cursor: pointer;
+}
+
+#services{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70vw;
+    overflow: hidden;
+    background-color: #4F6D7A;
+    background-image: linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.05) 50%),
+    linear-gradient(135deg, transparent 50%, rgba(255, 255, 255, 0.05) 50%);
+    background-size: 20vw 20vw;
+}
+.services-img{
+    width: 70vw;
+    height: 70vw;
+    margin-left: -20vw;
+    margin-top: 10vw
+}
+.services-content ul{
+    display: flex;
+    flex-direction: column;
+    font-size:1.5vw;
+    font-family: 'REM', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5vw;
+    align-items: start;
+}
+
+.services-content ul li{
+    margin-bottom: -30px
+}
+
+.services-content ul li p{
+    width:40vw
+}
+
+.offer-content{
+    font-size:1.2vw;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+.offer{
+    font-family: 'REM', sans-serif;
+    font-size:5vw;
+    color: #E3B505;
+    font-weight: bold;
+    letter-spacing: 0.2vw;
+}
+
+.house-img{
+    width:20vw;
+    height:15vw;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.class1{
+    height: 40vw;
+    width: 40vw;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    }
+    
+    #contact{
+        background-size: 20vw 20vw;
+    }
+.form-content{
+    height: fit-content;
+    width: 50vw;
+    background-color: #1d1d1d;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:aliceblue
+}
+form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    align-items: center;
+    padding: 4vw;
+    font-size:1.5vw;
+    font-family: 'REM', sans-serif;
+}
+.email, .message{
+    grid-column: 1/span 2;
+}
+
+form input{
+    font-size: 1.5vw;
+    border-radius: 0.5vw;
+    border: none;
+    font-family: 'REM', sans-serif;
+    background-color: aliceblue;
+}
+textarea{
+    width:35vw;
+    border-radius: 0.5vw;
+    background-color: aliceblue;
+}
+.email{
+    margin-top: -4vw;
+}
+.email input{
+    width:35vw
+}
+.submit{
+    font-size:1.5vw;
+    font-family: 'REM', sans-serif;
+    font-weight: bold;
+    width: fit-content;
+    padding: 1vw 1.5vw;
+    letter-spacing: 0.1vw;
+    border-radius: 0.5vw;
+    border: none;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+.form-title{
+    font-size:2.5vw;
+    font-family: 'REM', sans-serif;
+    font-weight: bold;
+    background-color: #084C61;
+    border-radius: 1vw;
+    width:25vw;
+    padding: 0.5vw 2.5vw;
+    text-align: center;
+    position: absolute;
+    margin-left:10vw;
+    margin-top:-4vw;
+    color:aliceblue
+}
+}
+
+@media screen and (max-width:1000px) 
+{
+   
+.slide-card{
+    background-color: #b6cad2;
+    width:fit-content;
+    height: 80vw;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+} 
+.house-img{
+    width:30vw;
+    height:15vw;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px;
+}
+.slide-card1{
+    height: 400px;
+    width: 100px;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: start;
+}
+
+.myswiper{
+    width: 80%;
+}
+.slide-wrapper{
+    padding: 0px 9vw;
+}
+.person{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.slide-img1{
+    position: absolute;
+    top:22%;
+    left:5%;
+    z-index: 1;
+}
+.slide-content1{
+    box-shadow: 5px 5px 15px #a7d9da;
+    font-size:1.5vw;
+    font-family: 'REM', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    margin-top:120px;
+    padding: 50px 0px 0px 0px;
+    border-radius: 10px;
+    border: 1px solid #7f7f7f;
+    width: fit-content;
+}
+.testimonials-content{
+    grid-column: 1/ span 2;
+    width:40vw;
+    padding:0px 30px
+}
+.testimonials-name, .stars{
+    border-top: 1px solid;
+    padding:20px 0px;
+}
+    
+}
+
+@media screen and (max-width:900px) {
+
+    #container{
+        background-image: url("container.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vw;
+    }
+    
+.rightcontent{
+    font-size: 3vw;
+    font-family: 'REM', sans-serif;
+    color: #1d1d1d;
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+}
+.multiText{
+    background-color: #084C61;
+}
+.class1{
+    height: 400px;
+    width: 600px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    display: none;
+    }
+    .rightcontent p{
+        font-size: 2vw;
+        position: relative;
+        z-index: 1;
+        font-weight: bold;
+    }
+    nav{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #084C61;
+        align-items: center;
+        padding: 0px 130px;
+    }
+    .nav-items{
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: end;
+    }
+    #nav-ul.show{
+        display: flex;
+        
+    }
+    .hamburger{
+        display: block;
+    }
+}
+
+@media screen and (max-width:700px) {
+    nav, #container, #property{
+        padding: 0px 50px;
+    }
+    
+    #services{
+        height: fit-content;
+    }
+.services-img{
+    width: 70vw;
+    height: 70vw;
+    margin-left: -20vw;
+    margin-top: 10vw;
+    display: none;
+}
+
+.services-content ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size:1.5vw;
+    font-family: 'REM', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5vw;
+    align-items: start;
+    padding-bottom: 2vw;
+}
+
+.services-content ul li{
+    margin-bottom: -30px
+}
+
+.services-content ul li p{
+    width:40vw
+}
+
+.offer-content{
+    font-size:2vw;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
+.offer{
+    font-family: 'REM', sans-serif;
+    font-size:5vw;
+    color: #E3B505;
+    font-weight: bold;
+    letter-spacing: 0.2vw;
+    text-align: center;
+}
+#contact{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 50px;
+    align-items: start;
+    height: fit-content;
+    gap:100px;
+    background-color: #4F6D7A;
+    background-image: linear-gradient(45deg, transparent 50%, rgba(255, 255, 255, 0.03) 50%),
+    linear-gradient(135deg, transparent 50%, rgba(255, 255, 255, 0.03) 50%);
+}
+
+.fa-address-card, .fa-envelope , .fa-phone-volume{
+    font-size: 30px;
+    color:#1d1d1d
+}
+.ways{
+    display: flex;
+    align-items: start;
+    gap:50px;
+    font-family: 'REM', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #1d1d1d;
+    cursor: pointer;
+}
+.touch{
+    margin-top: 0px;
+    font-size:70px;
+    font-family: 'REM', sans-serif;
+    font-weight: bold;
+    color: #1d1d1d;
+}
+
+.address{
+    grid-column: 1/span 2;
+}
+
+form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    align-items: center;
+    padding: 50px;
+    font-size:3vw;
+    font-family: 'REM', sans-serif;
+}
+  
+.form-content{
+    width: fit-content;
+    background-color: #1d1d1d;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:aliceblue
+}
+.email, .message{
+    grid-column: 1/span 2;
+}
+
+form input{
+    font-size: 3vw;
+    border-radius: 5px;
+    border: none;
+    font-family: 'REM', sans-serif;
+    background-color: aliceblue;
+}
+textarea{
+    width:46vw;
+    border-radius: 5px;
+    background-color: aliceblue;
+}
+.email{
+    margin-top: -40px;
+}
+.email input{
+    width:46vw
+}
+.submit{
+    font-size:20px;
+    font-family: 'REM', sans-serif;
+    font-weight: bold;
+    width: fit-content;
+    padding: 10px 15px;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    background-color: aliceblue;
+}
+
+.form-title{
+    font-size:3.5vw;
+    font-family: 'REM', sans-serif;
+    font-weight: bold;
+    background-color: #084C61;
+    border-radius: 10px;
+    width:35vw;
+    padding: 5px 30px;
+    text-align: center;
+    position: absolute;
+    margin-left:120px;
+    color:aliceblue
+}
+/*footer*/
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding:0px;
+    color: #1d1d1d;
+  }
+footer{
+    background-color: aliceblue;
+    color: #1d1d1d; 
+}
+  .email2{
+   border:none;
+   border-bottom: 0.15vw solid #242527;
+   background: transparent;
+   width:40vw;
+   font-size: 4vw;
+  }
+  .fa-envelope{
+    font-size: 5vw;
+  }
+  .sub{
+    border:none;
+    background-color: #242527;
+    color:#fff;
+    padding: 2vw 4vw;
+    border-radius: 5px;
+    font-size:4vw;
+    margin-top: 2vw;
+    cursor: pointer;
+  }
+  .subscribe{
+    font-size: 5vw;
+    font-weight: bold;
+    font-family: 'REM', sans-serif;
+    margin-top: 3vw;
+    letter-spacing: 2px;
+  }
+  .contact1{
+    font-size: 4vw;
+    font-weight: bold;
+    font-family: 'REM', sans-serif;
+    letter-spacing: 2px;
+  }
+  .fb, .tw, .ig{
+    width: 8vw;
+    height: 8vw;
+    background-color: #242527;
+    border-radius: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+  }
+  .fa-brands{
+    font-size: 4vw;
+  }
+  .social-media{
+    display: flex;
+    gap: 1.5vw;
+    margin: 2.5vw 0vw;
+    justify-content: center;
+  }
+  .line{
+    height: 0.1vw;
+    background-color: #1d1d1d;
+    border-radius: 20px;
+  }
+  .footer{
+   text-align: center;
+   font-size: 3vw;
+  }
+  .logo-name1{
+    color: #1d1d1d;
+    font-family: 'Borel', cursive;
+    font-size: 30px;
+    font-weight: bold;
+  }
+}

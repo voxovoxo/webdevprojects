@@ -23,7 +23,7 @@ var swiper = new Swiper(".swiper" , {
         550: {
             slidesPerView: 2,
         },
-        950: {
+        1050: {
             slidesPerView: 3,
         },
     },
@@ -49,9 +49,17 @@ var swiper = new Swiper(".swiper" , {
     breakpoints:{
         0: {
             slidesPerView: 1,
+            spaceBetween: 15,
         },
-        950: {
-            slidesPerView: 2,
-        },
+        1610:{
+          slidesPerView:2,
+        }
     },
   });
+
+  const hamburger = document.getElementById('hamburger');
+  const navul = document.getElementById('nav-ul');
+
+  hamburger.addEventListener('click', ()=>{
+    navul.classList.toggle('show');
+  })
