@@ -45,6 +45,40 @@ window.addEventListener('resize', ()=>{
   renderer.setSize(sizes.width, sizes.height)
 })
 
+
+//Timeline magic
+const t1 = gsap.timeline({defaults: {duration: 1} })
+t1.fromTo(mesh.scale, {z:0, x:0, y:0}, {z:1, x:1, y:1})
+t1.fromTo("nav", { y: "-100%"}, { y: "0%"})
+t1.fromTo(".title", {opacity :0}, {opacity:1})
+
+//mouse Animation color
+let mouseDown = false;
+let rgb = [];
+window.addEventListener("mousedown", () => (
+  mouseDown = true))
+
+window.addEventListener("mouseup", () => (
+  mouseDown = false))
+
+window.addEventListener("mousemove", (e) => {
+  if (mouseDown) {
+    rgb = [
+      Math.round((e.pageX / sizes.width) * 255),
+      Math.round((e.pageY / sizes.height) * 255),
+      150,
+    ];
+
+    //lets animate
+    let newColor = new THREE.Color(`rgb(${rgb.join(",")})`);
+    gsap.to(mesh.material.color, {
+      r: newColor.r,
+      g: newColor.g,
+      b: newColor.b,
+    });
+  }
+});
+
 //controls
 const controls = new OrbitControls(camera, canvas)
 controls.enableDamping = true
@@ -60,32 +94,3 @@ const loop = () =>{
   window.requestAnimationFrame(loop)
 }
 loop()
-
-//Timeline magic
-const t1 = gsap.timeline({defaults: {duration: 1} })
-t1.fromTo(mesh.scale, {z:0, x:0, y:0}, {z:1, x:1, y:1})
-t1.fromTo("nav", { y: "-100%"}, { y: "0%"})
-t1.fromTo(".title", {opacity :0}, {opacity:1})
-
-//mouse Animation color
-let mouse = false
-let rgb = []
-window.addEventListener("mousedown", () => (mouse = true))
-window.addEventListener("mouseup", () => (mouse = false))
-window.addEventListener("mousemove", (e) => {
-  if (mouse){
-      rgb = [
-        Math.round((e.pageX / sizes.width) * 255),
-        Math.round((e.pageY / sizes.height) * 255),
-        150, 
-      ]
-      //lets animate
-      let newColor = new THREE.Color('rgb(${rgb.join(",")})')
-      gsap.to(mesh.material.color, 
-        {r: newColor.r, 
-          g:newColor.g, 
-          b: newColor.b
-        })
-  }
-})
-
